@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="home.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="data:image/png;base64,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"
+          alt="Logo"
+        />
+      </div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="">Service</a></li>
+      </ul>
+      <div class="title">
+    
+        <h3 id=""> Welcome <span id="user">👥</span>
+            <span id="login_user"></span></h3>
+            <button><a href="./login.html">logout</a></button>
+      </div>
+      <div class="span_div"><span>&#9776;</span> </div>
+    </nav>
+    <div id="hero_section">
+      <figure class="image">
+        <img src="https://cdn.pixabay.com/photo/2022/09/05/15/15/fog-7434398_640.jpg" alt="background">
+        <figcaption>This is  Your Future so Bright Us</figcaption>
+        </figure>
+  </div>
+    <div class="hero_section">
+
+      <div class="hero_1div">
+        <h2> A liberay wants to doen about the</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aperiam
+          possimus blanditiis ad, quae nemo odio animi temporibus? Autem
+          repellat aliquid consequatur dolorum inventore commodi ratione dolores
+          necessitatibus quaerat mollitia.
+        </p>
+        <button>Get Access Now</button>
+      </div>
+      <div class="hero_img_div">
+    <img src="https://media.istockphoto.com/id/842921614/photo/funny-laughing-curly-girl-with-a-butterfly-on-his-nose.jpg?s=612x612&w=0&k=20&c=aL6Nmd7QFRawSUGIZsu5UPNtHTjoGAaO9VVaBIUANxs=" alt="" class="src">
+      </div>
+    </div>
+    <div id="ApiData">
+      <div><h1>Our Product's</h1></div>
+      <div id="containerApi">
+    </div>
+   
+      
+    </div>
+    <div class="contat_us">
+      <div id="contat_us_img">
+           <img  src="https://media.istockphoto.com/id/1248841437/vector/young-sprout-with-three-leaves-in-hand-solid-icon-save-nature-concept-seedling-with-handful.jpg?s=612x612&w=0&k=20&c=YsBL7Y5qlmVxxBGnT8o2d5em4nSkWLa-qPGaSiHiLXo=" alt="">
+      </div>
+      
+        
+        <div id="form_div">
+          <div><h1 class="form_h1">Contact us</h1></div>
+            <form id="form">
+          <label for="">Name:-</label><br>
+          <input type="text" id="name" placeholder="enter your name"><br>
+          <label for="">mobile no:-</label><br>
+          <input type="number" id="mobile" placeholder="enter your mobile number"><br>
+          <label for="">
+            Father name:-</label><br>
+          <input type="text" id="father_name" placeholder="enter your father name"><br>
+          <label for="">Date of birth:- </label><br>
+          <input type="date" id="date_of_birth" placeholder="enter your date of birth"><br>
+          <label for="">Cousre:-</label><br>
+          <select name="" id="select">
+            <option value="select">Selcet</option>
+            <option value="html">Html</option>
+            <option value="css">css</option>
+            <option value="java script">Java Script</option>
+          </select>
+           
+          
+
+          <div id="button" > 
+            <button id="btn">Submit</button>
+          
+          </div>
+            </form>
+        </div>
+          
+         
+        
+      </div>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+         
+          
+          <div class="">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class=" the_footer">
+            <h4>Newsletter</h4>
+            <p>Stay up to date with our latest news and offers</p>
+            <form>
+              <input type="email" placeholder="Enter your email address">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; 2023 Company Name. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    let login_user1 = JSON.parse(localStorage.getItem("login_user"));
+    let login_user = document.getElementById("login_user");
+    login_user.innerHTML = login_user1.name;
+
+
+    let cont=document.getElementById("containerApi")
+   
+   let arr= [];
+   async function getValuefromApi(){
+    try{
+    let response= await axios.get("https://fakestoreapi.com/products");
+    console.log(response.data);
+    arr=response.data
+  
+    displayData();
+   }
+   catch(error){
+    console.log(error)
+   }
+}
+getValuefromApi()
+
+function displayData(){
+    cont.innerHTML="";
+    arr.map((element) => {
+        let card=document.createElement("div")
+        let image= document.createElement("img")
+        image.src=element.image;
+        let title=document.createElement("h3")
+        title.innerText=element.title;
+        let price=document.createElement("p")
+        price.innerText= `₹${element.price}`;
+      
+        let rate= document.createElement("h3")
+        rate.innerText = `Rating: ${element.rating.rate}`;
+
+        card.append(image,title,price,rate)
+        cont.append(card)
+});
+}
+// displayData();
+  
+  </script>
+</html>

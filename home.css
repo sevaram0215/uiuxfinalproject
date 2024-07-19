@@ -1,0 +1,649 @@
+.navbar {
+    width: 99%;
+      background-color: #333;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+    
+    .logo {
+      margin-right: 20px;
+    }
+    
+    .logo img {
+      width: 100px;
+      height: 90px;
+      border-radius: 10px;
+  
+    }
+    
+    .title {
+      font-size: 24px;
+      color: #fff;
+      margin-right: 30px;
+      /* border: 2px solid red; */
+    }
+    
+    .navbar ul {
+      /* border: 2px solid red; */
+      width: 35%;
+      list-style: none;
+      margin: 0;
+      margin-left: 20%;
+      padding: 0;
+      display: flex;
+    }
+    
+    .navbar li {
+      margin-right: 20px;
+      /* border: 2px solid green; */
+      margin: auto;
+  
+    }
+    #user{
+      background-color: #c8dcc8;
+    }
+    .navbar a {
+      color: #fff;
+      font-size: 22px;
+      text-decoration: none;
+  
+    }
+    
+    .navbar a:hover {
+      color: #ccc;
+    }
+    .title{
+      display: flex;
+  
+    }
+    .span_div{
+      display: none;
+    }
+    .title button{
+      width: 100px;
+      height: 30px;
+      margin-top: 40px;
+      border-radius: 10px;
+      margin-left: 20px;
+      background-color: hsla(21, 95%, 47%, 0.751);
+    }
+    #hero_section{
+      width: 90%;
+      padding: 10px;
+    overflow: hidden;
+      margin: auto;
+      
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  }
+  #hero_section img{
+      width: 100%;
+     height: 600px;
+  
+  }
+    .image img {
+      width: 100%;
+      /* height: 100%; */
+      }
+      
+      .image {
+      position: relative;
+      overflow: hidden;
+      }
+      
+      .image figcaption{
+     font-size: 40px;
+      position: absolute;
+      top: 20%;
+      bottom: 50%;
+      left: 35%;
+      }
+  
+  
+    .hero_section{
+      width: 95%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f3f9f9;
+      margin-top: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    header{
+      height: 40px;
+    }
+    .hero_1div{
+      width: 40%;
+      margin-left: 7%;
+      margin-top: 10%;
+      /* align-items: center; */
+    }
+    .hero_section button{
+      width: 120px;
+      height: 25px;
+      background-color: greenyellow;
+      border-radius: 10px;
+      
+    }
+    .hero_img_div{
+      /* border: 2px solid; */
+      width: 45%;
+      padding: 10px;
+      overflow: hidden;
+    }
+    .hero_img_div img{
+      width: 100%;
+      height: 500px;
+  transition: ease-in-out 5s;
+  
+    }
+    .hero_img_div img:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+      } 
+      
+      .Product_api_div{
+        border: 2px solid green;
+      }
+      h1{
+        text-align: center;
+        background-color: rgb(6, 6, 94);
+        padding: 20px;
+        color: #ddd;
+        line-height: 5px; 
+    }
+    #containerApi {
+     
+        width: 99%;
+       
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap:10px;
+    }
+    #containerApi div:nth-child(odd){
+        background-color: #ddf1f3ec;
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+        /* overflow: hidden; */
+        border-radius: 45px 10px 40px 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 
+        0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        transition: 0.6s ease-in-out;
+    }
+    #containerApi div:nth-child(even){
+      background-color: #ebeee7ec;
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      /* overflow: hidden; */
+      border-radius: 45px 10px 40px 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 
+      0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+      transition: 0.6s ease-in-out;
+  }
+    img{
+        width: 50%;
+        height: 22vh;
+        border-radius: 10px;
+        transition: ease-in-out 3s;
+    }
+  
+    #containerApi div:hover{
+        background-color: rgba(225, 240, 202, 0.742);
+        transform: scale(1.025);
+        cursor: pointer;
+      
+    }
+      .contat_us{
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-around;
+      }
+      #contat_us_img{
+        width: 50%;
+      }
+      #contat_us_img img{
+        width: 100%;
+        height: 600px;
+      }
+    
+    #form_div{
+      width: 40%;
+      margin: auto;
+      margin-top: 10px;
+   
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     
+      background-image: url(https://img.freepik.com/free-vector/colorful-triangle-shapes-banner-technical-wire-mesh-style-vector_1017-45720.jpg?ga=GA1.1.109605606.1702533388&semt=ais_user);
+      background-size: cover;
+  }
+  form{
+     
+      width: 50%;
+      margin: auto;
+       padding: 40px;
+      border: 1px solid rgb(142, 142, 225);
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      margin-bottom: 30px;
+   
+  }
+  #button{
+    display: flex;
+    justify-content: space-around;
+  }
+  #button button{
+    width: 100px;
+    background-color: #333;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+    transition: ease-in-out 3s;
+  
+  }
+  #button button:hover{
+   cursor: pointer;
+   
+    background-color: wheat;
+    color: black;
+    height: 30px;
+    border-radius: 10px;
+  
+  }
+  .form_h1{
+    text-align: center;
+    /* border: 2px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  }
+  input,select{
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+  
+  }
+  select{
+  width: 101%;
+  border-radius: 5px;
+  font-weight: bold;
+  }
+  ::placeholder,option{
+   font-weight: bold;
+  }
+  label{
+  margin-top: 20px;
+  }
+      footer {
+        background-color: #333;
+        color: #f5ececf3;
+        padding: 20px 0;
+      }
+      
+      footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      footer .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+     
+      
+      footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      footer li {
+        margin-bottom: 10px;
+      }
+      
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      footer a:hover {
+        color: #ccc;
+      }
+     
+      footer form {
+        margin-top: 20px;
+        
+      }
+      
+     
+      footer button[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: ease-in-out 3s;
+      }
+      
+      footer button[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+      
+      footer p {
+        margin-bottom: 10px;
+      }
+      
+      footer .copyright {
+        font-size: 14px;
+        color: #666;
+      }
+   
+     
+      .the_footer form{
+       
+       
+        margin-right: 30%;
+        text-align: start;
+      }
+      @media screen and (min-width: 200px) and (max-width: 757px){
+  
+  
+    
+      
+    
+        
+      
+    
+        
+        .navbar {
+          width: 99%;
+            background-color: #d9c2c2;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+          }
+          
+          .logo {
+            margin-right: 20px;
+          }
+          
+          .logo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        
+          }
+          
+          .title {
+            font-size: 24px;
+            color: #fff;
+            margin-right: 20px;
+            /* border: 2px solid red; */
+          }
+          
+          .navbar ul {
+    display: none;
+          }
+          
+     
+          
+         
+       
+          .title{
+            width: auto;
+            display: flex;
+            margin-left: 60px;
+            margin-top: 10px;
+            /* border: 2px solid red; */
+          }
+          .span_div{
+            display: block;
+           font-size: 40px;
+       margin-right: 20px;
+          margin-top: 40px;
+          }
+          .title button{
+     
+            width: 100px;
+            height: 40px;
+        
+            border-radius: 10px;
+            margin-right: 10px;
+        
+           
+          }
+    
+  
+      
+        .title button{
+         
+         display: none;
+        }
+        #hero_section{
+          width:99%;
+          padding: 10px;
+        overflow: hidden;
+          margin: auto;
+          
+        margin-bottom: 40px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      }
+      #hero_section img{
+          width: 100%;
+         height: 350px;
+      
+      }
+        .image img {
+          width: 100%;
+          
+          }
+          
+          .image {
+          position: relative;
+          overflow: hidden;
+          }
+          
+          .image figcaption{
+         font-size: 40px;
+          position: absolute;
+          top: 20%;
+          bottom: 50%;
+          left: 25%;
+          }
+      
+          .hero_section{
+            width: 95%;
+            margin: auto;
+            display: block;
+         
+         
+         
+          }
+       
+          .hero_1div{
+            width: 95%;
+            margin-left: 10px;
+            margin-top: 10%;
+            /* align-items: center; */
+          }
+          .hero_section button{
+            width: 120px;
+            height: 35px;
+            margin-left: 35%;
+            background-color: greenyellow;
+            border-radius: 10px;
+            
+          }
+          .hero_img_div{
+            /* border: 2px solid; */
+            width: 95%;
+            padding: 10px;
+            overflow: hidden;
+          }
+          .hero_img_div img{
+            height: 300px;
+          }
+        #containerApi {
+     
+          width: 99%;
+         
+      margin: auto;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+       
+      }
+      #containerApi div{
+        width: 50%;
+        margin: auto;
+      }
+  
+      #containerApi div:nth-child(odd){
+       width: 90%;
+   
+      /* border: 2px solid red; */
+          /* overflow: hidden; */
+          border-radius: 45px 10px 40px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 
+          0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+          transition: 0.6s ease-in-out;
+      }
+      #containerApi div:nth-child(even){
+  
+        width: 80%;
+        border: 2px solid red;
+        padding: 10px;
+      
+     
+        text-align: center;
+        /* overflow: hidden; */
+        border-radius: 45px 10px 40px 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 
+        0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        transition: 0.6s ease-in-out;
+    }
+      img{
+          width: 50%;
+          height: 22vh;
+          border-radius: 10px;
+          transition: ease-in-out 3s;
+      }
+    
+      #containerApi div:hover{
+          background-color: rgba(225, 240, 202, 0.742);
+          transform: scale(1.025);
+          cursor: pointer;
+        
+      }
+      
+          
+         
+          .contat_us{
+           width: 99%;
+           margin: auto;
+            display: block;
+            
+           
+          }
+          #contat_us_img{
+            width: 100%;
+          }
+          #contat_us_img img{
+            width: 100%;
+            height: 300px;
+          }
+        
+        #form_div{
+          width: 90%;
+          margin: auto;
+          margin-top: 10px;
+       
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+         
+          background-image: url(https://img.freepik.com/free-vector/colorful-triangle-shapes-banner-technical-wire-mesh-style-vector_1017-45720.jpg?ga=GA1.1.109605606.1702533388&semt=ais_user);
+          background-size: cover;
+      }
+    
+    }
+  
+      
+  
+      @media screen and (min-width: 758px) and (max-width: 1024px){
+    
+        .navbar {
+          width: 99%;
+            background-color: #f5a1a1;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+          }
+          
+          .logo {
+            margin-right: 20px;
+          }
+          
+          .logo img {
+            width: 100px;
+            height: 90px;
+            border-radius: 10px;
+        
+          }
+          
+          .title {
+            width: 30%;
+         
+            font-size: 24px;
+            color: #fff;
+            margin-right: 30px;
+            /* border: 2px solid red; */
+          }
+          
+          .navbar ul {
+            /* border: 2px solid red; */
+            width: 35%;
+            list-style: none;
+            margin: 0;
+            margin-left: 10%;
+            padding: 0;
+            display: flex;
+     
+          }
+        
+          .navbar li {
+            margin-right: 20px;
+            /* border: 2px solid green; */
+            margin: auto;
+        
+          }
+          #user{
+           
+            display: none;
+          }
+          .navbar a {
+            color: #fff;
+            font-size: 22px;
+            text-decoration: none;
+          
+        
+          }
+          
+          .navbar a:hover {
+            color: #080707;
+            background-color: yellow;
+  
+          }
+        
+    
+      }
+    
+    
