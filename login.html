@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div id="main_container">
+      <div id="form_div">
+       
+        <form id="form">
+          <div class="h1_tag"><h1>login Form</h1></div>
+          <label for="">Email id:-</label><br />
+          <input type="email" id="email" placeholder="Enter your email" /><br />
+          <label for=""> Passward:-</label><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your passward"
+          /><br />
+          <div id="login_btn">
+            <button id="login">login</button>
+            <div id="link">
+              You Don't have a Account <a href="index.html">Click Here</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+   
+  </body>
+  <script>
+    let btn = document.getElementById("login");
+   let from=document.getElementById("form")
+    btn.addEventListener("click", (ele)=>{
+    ele.preventDefault()
+    loginUser()
+    });
+    let dataLogin = JSON.parse(localStorage.getItem("user")) || [];
+    console.log(dataLogin);
+    function loginUser() {
+      // ele.preventDefult();
+      let userDeatils = {
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+      };
+      let valueChek = dataLogin.find(
+        (element) =>
+          element.email === userDeatils.email &&
+          element.password === userDeatils.password
+      );
+      console.log(valueChek);
+      if (valueChek) {
+        localStorage.setItem("login_user", JSON.stringify(valueChek));
+        alert("login successfull");
+        window.location.href = "home.html";
+      } else {
+        alert("login failed");
+      }
+      form.reset();
+    }
+  </script>
+</html>
