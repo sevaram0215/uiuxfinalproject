@@ -164,12 +164,14 @@ body{
     }
     @media screen and (min-width: 758px) and (max-width: 1024px){
   
-   
+   #form_div{
+    width: 90%;
+   }
   
   
       #login{
       
-    width: 94.5%;
+       width: 94.5%;
       font-size: 20px;
       margin-left: 0%;
       border-radius: 5px;

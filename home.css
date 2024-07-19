@@ -1,11 +1,25 @@
+#Main_container{
+    width: 90%;
+    margin: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar {
     width: 99%;
       background-color: #333;
       padding: 1em;
       display: flex;
+      position: sticky;
+      top: 00;
+      z-index: 1;
       justify-content: space-between;
       align-items: center;
       margin: auto;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
     
     .logo {
@@ -57,6 +71,7 @@
     }
     .title{
       display: flex;
+     
   
     }
     .span_div{
@@ -65,13 +80,14 @@
     .title button{
       width: 100px;
       height: 30px;
-      margin-top: 40px;
+    margin-top: 10px;
       border-radius: 10px;
       margin-left: 20px;
       background-color: hsla(21, 95%, 47%, 0.751);
+     
     }
     #hero_section{
-      width: 90%;
+      width: 99%;
       padding: 10px;
     overflow: hidden;
       margin: auto;
@@ -104,7 +120,7 @@
   
   
     .hero_section{
-      width: 95%;
+      width: 99%;
       margin: auto;
       display: flex;
       justify-content: space-between;
@@ -150,10 +166,38 @@
       }
       h1{
         text-align: center;
-        background-color: rgb(6, 6, 94);
+        background-color: rgb(174, 174, 237);
         padding: 20px;
         color: #ddd;
         line-height: 5px; 
+    }
+
+    #fixed_logopart{
+    
+        display: flex;
+      justify-content: space-between;
+      
+        
+    }
+    #fixed_logo{
+       position: fixed;
+       bottom: 05%;
+       right: 120px;
+       gap: 20px;
+        display: grid;  justify-content: space-around;
+      margin-left: 84%;
+      
+        
+    }
+    #fixed_logopart img{
+        width: 60px;
+        height: 40px;
+    }
+    .our_product{
+        width: 99%; 
+        margin: auto;
+        margin-top: 10px;
+        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
     }
     #containerApi {
      
@@ -171,8 +215,7 @@
         text-align: center;
         /* overflow: hidden; */
         border-radius: 45px 10px 40px 10px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 
-        0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         transition: 0.6s ease-in-out;
     }
     #containerApi div:nth-child(even){
@@ -182,8 +225,7 @@
       text-align: center;
       /* overflow: hidden; */
       border-radius: 45px 10px 40px 10px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 
-      0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
       transition: 0.6s ease-in-out;
   }
     img{
@@ -199,13 +241,46 @@
         cursor: pointer;
       
     }
+    #Ad_de_btn{
+        background-color: #fff;
+        width: 70%;
+        margin: auto;
+        
+        border-radius: 10px;
+    }
+    #add_card_btn{
+        background-color: rgb(129, 194, 33);
+        width: 100px ;
+        margin: 10px;
+        height: 30px;
+        border-radius: 5px;
+        transition: ease-in-out 3s;
+    }
+    #delet_btn{
+        background-color: rgba(237, 13, 17, 0.761);
+        width: 100px ;
+        height: 30px;
+        border-radius: 5px;
+        transition: ease-in-out 3s;
+    }
+    #delet_btn:hover{
+        cursor: pointer;
+        background-color: rgba(16, 15, 15, 0.761);
+        color: white;
+    }
+    #add_card_btn:hover{
+        cursor: pointer;
+        background-color: rgba(16, 15, 15, 0.761);
+        color: white;
+    }
       .contat_us{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: flex;
         justify-content: space-around;
       }
       #contat_us_img{
         width: 50%;
+        margin-top: 10px;
       }
       #contat_us_img img{
         width: 100%;
@@ -224,7 +299,7 @@
   }
   form{
      
-      width: 50%;
+      width: 80%;
       margin: auto;
        padding: 40px;
       border: 1px solid rgb(142, 142, 225);
@@ -268,7 +343,7 @@
   
   }
   select{
-  width: 101%;
+  width: 95%;
   border-radius: 5px;
   font-weight: bold;
   }
@@ -278,8 +353,11 @@
   label{
   margin-top: 20px;
   }
+
+  
       footer {
-        background-color: #333;
+width: 99%;
+        background-color: #7f7a7a;
         color: #f5ececf3;
         padding: 20px 0;
       }
@@ -356,20 +434,26 @@
   
   
     
-      
+        #Main_container{
+            width: 90%;
+            margin: auto;
+        }
+        
     
         
       
     
         
         .navbar {
-          width: 99%;
+            /* border: 2px solid red; */
+          width: 95%;
+          margin: auto;
             background-color: #d9c2c2;
             padding: 1em;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: auto;
+           
           }
           
           .logo {
@@ -401,14 +485,15 @@
           .title{
             width: auto;
             display: flex;
-            margin-left: 60px;
+            margin-left: 10px;
             margin-top: 10px;
             /* border: 2px solid red; */
           }
           .span_div{
+            /* border: 2px solid red; */
             display: block;
-           font-size: 40px;
-       margin-right: 20px;
+           font-size: 30px;
+  
           margin-top: 40px;
           }
           .title button{
@@ -485,13 +570,24 @@
           }
           .hero_img_div{
             /* border: 2px solid; */
-            width: 95%;
+            width: 100%;
             padding: 10px;
             overflow: hidden;
           }
           .hero_img_div img{
             height: 300px;
           }
+
+          #fixed_logo{
+            position: fixed;
+            bottom: 05%;
+            right: 20px;
+            gap: 20px;
+             display: grid;  justify-content: space-around;
+           margin-left: 84%;
+           
+             
+         }
         #containerApi {
      
           width: 99%;
@@ -519,7 +615,7 @@
       #containerApi div:nth-child(even){
   
         width: 80%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         padding: 10px;
       
      
@@ -562,7 +658,7 @@
           }
         
         #form_div{
-          width: 90%;
+          width: 99%;
           margin: auto;
           margin-top: 10px;
        
@@ -571,7 +667,9 @@
           background-image: url(https://img.freepik.com/free-vector/colorful-triangle-shapes-banner-technical-wire-mesh-style-vector_1017-45720.jpg?ga=GA1.1.109605606.1702533388&semt=ais_user);
           background-size: cover;
       }
-    
+    #form{
+        width: 100%;
+    }
     }
   
       
@@ -610,10 +708,10 @@
           
           .navbar ul {
             /* border: 2px solid red; */
-            width: 35%;
+            width: 45%;
             list-style: none;
             margin: 0;
-            margin-left: 10%;
+           
             padding: 0;
             display: flex;
      
@@ -629,6 +727,9 @@
            
             display: none;
           }
+          #login_user{
+            margin-left: 30px;
+          }
           .navbar a {
             color: #fff;
             font-size: 22px;
@@ -642,8 +743,35 @@
             background-color: yellow;
   
           }
-        
-    
-      }
-    
+          #fixed_logo{
+            position: fixed;
+            bottom: 05%;
+            right: 60px;
+            gap: 20px;
+             display: grid;  justify-content: space-around;
+           margin-left: 84%;
+           
+             
+         }
+          #form_div{
+            width: 50%;
+            margin: auto;
+            margin-top: 10px;
+         
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+           
+            background-image: url(https://img.freepik.com/free-vector/colorful-triangle-shapes-banner-technical-wire-mesh-style-vector_1017-45720.jpg?ga=GA1.1.109605606.1702533388&semt=ais_user);
+            background-size: cover;
+        }
+          #form{
+            width: 100%;
+        }
+    .title button{
+    width: 150px;
+    background-color: #e05555;
+    border-radius: none;
+    border: 1px solid palevioletred;
+    }
+      
+}
     
