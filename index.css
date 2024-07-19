@@ -1,0 +1,132 @@
+
+   
+
+  #form_div{
+    width: 40%;
+    margin: 80px auto;
+
+
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   padding-bottom: 20px;
+    background-image: url(https://media.istockphoto.com/id/511661914/photo/white-marble-patterned-texture-background.jpg?s=612x612&w=0&k=20&c=o9RRB_jhshUtxn-LIO2TNQz4QycdeOh-qe1qMK4CZW4=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+   
+    width: 60%;
+
+  margin: auto;
+
+     padding: 40px;
+
+    /* border: 2px solid rgb(142, 142, 225); */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ 
+}
+#button{
+  display: flex;
+  justify-content: space-around;
+}
+#btn {
+  width: 100px;
+  background-color: #117cee;
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 10px;
+  transition: ease-in-out 2s;
+
+}
+#link{
+  margin-top: 10px;
+
+ 
+
+}
+a{
+  text-decoration: none;
+  color: rgb(225, 21, 21);
+  font-style: bold;
+  background-color: aliceblue;
+
+}
+#btn:hover{
+ cursor: pointer;
+ 
+  background-color: wheat;
+  color: black;
+  height: 30px;
+  border-radius: 10px;
+
+}
+h1{
+  text-align: center;
+  /* border: 2px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+input,select{
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+ 
+}
+select{
+  width: 100.5%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+::placeholder,option,select{
+   font-weight: bold;
+}
+label{
+margin-top: 20px;
+}
+
+h2{
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
+
+
+ 
+  @media screen and (min-width: 200px) and (max-width: 757px){
+
+    #form_div{
+      width: 100%;
+      margin: 5px auto;
+
+
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     padding-bottom: 20px;
+      background-image: url(https://media.istockphoto.com/id/511661914/photo/white-marble-patterned-texture-background.jpg?s=612x612&w=0&k=20&c=o9RRB_jhshUtxn-LIO2TNQz4QycdeOh-qe1qMK4CZW4=);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+
+#button button{
+  
+ margin: 5px;
+}
+select{
+  width: 107%;
+ 
+}
+
+  }
+  @media screen and (min-width: 758px) and (max-width: 1024px){
+
+    #form_div{
+      width: 100%;
+      
+    }
+
+
+
+  }
+
