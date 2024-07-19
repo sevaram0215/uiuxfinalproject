@@ -446,7 +446,7 @@ width: 99%;
         
         .navbar {
             /* border: 2px solid red; */
-          width: 95%;
+          width: 99%;
           margin: auto;
             background-color: #d9c2c2;
             padding: 1em;
@@ -590,8 +590,9 @@ width: 99%;
          }
         #containerApi {
      
-          width: 99%;
-         
+          width: 90%;
+         padding: 0;
+         margin: 0;
       margin: auto;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
@@ -600,6 +601,7 @@ width: 99%;
       #containerApi div{
         width: 50%;
         margin: auto;
+       margin: 0;
       }
   
       #containerApi div:nth-child(odd){
@@ -614,18 +616,42 @@ width: 99%;
       }
       #containerApi div:nth-child(even){
   
-        width: 80%;
+        width: 71%;
         /* border: 2px solid red; */
         padding: 10px;
       
      
         text-align: center;
-        /* overflow: hidden; */
+
         border-radius: 45px 10px 40px 10px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 
         0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
         transition: 0.6s ease-in-out;
     }
+    #Ad_de_btn{
+      overflow: hidden;
+      background-color: #fff;
+      width: 90%;
+      margin: auto;
+      
+      border-radius: 10px;
+  }
+  #add_card_btn{
+    background-color: rgb(129, 194, 33);
+    width: 80px ;
+    margin: 10px;
+    height: 30px;
+    border-radius: 5px;
+    transition: ease-in-out 3s;
+}
+#delet_btn{
+    background-color: rgba(237, 13, 17, 0.761);
+    width: 80px ;
+    height: 30px;
+    border-radius: 5px;
+    transition: ease-in-out 3s;
+}
+  
       img{
           width: 50%;
           height: 22vh;
@@ -753,6 +779,29 @@ width: 99%;
            
              
          }
+         #Ad_de_btn{
+          overflow: hidden;
+          background-color: #fff;
+          width: 90%;
+          margin: auto;
+          
+          border-radius: 10px;
+      }
+      #add_card_btn{
+        background-color: rgb(129, 194, 33);
+        width: 80px ;
+        margin: 10px;
+        height: 30px;
+        border-radius: 5px;
+        transition: ease-in-out 3s;
+    }
+    #delet_btn{
+        background-color: rgba(237, 13, 17, 0.761);
+        width: 80px ;
+        height: 30px;
+        border-radius: 5px;
+        transition: ease-in-out 3s;
+    }
           #form_div{
             width: 50%;
             margin: auto;
