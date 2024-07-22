@@ -7,59 +7,59 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-
+    <div id="main_container">
     
- 
-    <div id="main_con">
-      <div id="form_div">
-        <div><h1>Registration Form</h1></div>
-          <form id="form">
-        <label for="">Name:-</label><br>
-        <input type="text" id="name" placeholder="enter your name"><br>
-        <label for="">mobile no:-</label><br>
-        <input type="number" id="mobile" placeholder="enter your mobile number"><br>
-        <label for="">Email id:-</label><br>
-        <input type="email" id="email" placeholder="enter your email"><br>
-        <label for="">Set passward:-</label><br>
-        <input type="password" id="passward" placeholder="set your passward"><br>
-        
-        <label for="">
-          Father name:-</label><br>
-        <input type="text" id="father_name" placeholder="enter your father name"><br>
-        <label for="">Date of birth:- </label><br>
-        <input type="date" id="date_of_birth" placeholder="enter your date of birth"><br>
-        <label for="">Cousre:-</label><br>
-        <select name="" id="select">
-          <option value="select">Selcet</option>
-          <option value="html">Html</option>
-          <option value="css">css</option>
-          <option value="java script">Java Script</option>
-        </select>
-         
-        
-
-        <div id="button" > 
-          <button id="btn">Submit</button>
-
-
-        </div>
-        <div id="link"> Already have a Account    <a href="login.html">Click Here</a></div>
-          </form>
-      </div>
-
-    
-
- 
-        
-   
-
-  
- 
+       
+        <form id="form">
+          <h1>login Form</h1>
+          <label for="">Email id:-</label><br />
+          <input type="email" id="email" placeholder="Enter your email" /><br />
+          <label for=""> Passward:-</label><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your passward"
+          /><br />
+          <div id="login_btn">
+            <button id="login">login</button>
+            <div id="link">
+              You Don't have a Account <a href="register.html">Click Here</a>
+            </div>
+          </div>
+        </form>
+      
     </div>
    
-     
-
-   
   </body>
-  <script src="index.js"></script>
+  <script>
+    let btn = document.getElementById("login");
+   let from=document.getElementById("form")
+    btn.addEventListener("click", (ele)=>{
+    ele.preventDefault()
+    loginUser()
+    });
+    let dataLogin = JSON.parse(localStorage.getItem("user")) || [];
+    console.log(dataLogin);
+    function loginUser() {
+      // ele.preventDefult();
+      let userDeatils = {
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+      };
+      let valueChek = dataLogin.find(
+        (element) =>
+          element.email === userDeatils.email &&
+          element.password === userDeatils.password
+      );
+      console.log(valueChek);
+      if (valueChek) {
+        localStorage.setItem("login_user", JSON.stringify(valueChek));
+        alert("login successfull");
+        window.location.href = "home.html";
+      } else {
+        alert("login failed");
+      }
+      form.reset();
+    }
+  </script>
 </html>

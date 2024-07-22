@@ -1,0 +1,154 @@
+body{
+  background-color: rgb(21, 76, 194);
+}
+#main_con{
+  width: 90%;
+  margin: auto;
+ 
+}
+
+form{
+   
+  width: 30%;
+
+  margin: auto;
+
+  margin: 100px auto;
+
+background-color: white;
+ 
+ padding-bottom: 20px;
+ 
+     padding: 40px;
+     padding-top: 10px;
+    /* border: 2px solid rgb(142, 142, 225); */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ 
+}
+#button{
+text-align: center;
+}
+#btn {
+  width: 200px;
+  background-color: rgb(21, 76, 194);
+margin-top: 10px;
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 10px;
+
+
+}
+#link{
+  margin-top: 10px;
+text-align: center;
+ 
+
+}
+a{
+  text-decoration: none;
+  color: rgb(225, 21, 21);
+  font-style: bold;
+  background-color: aliceblue;
+
+}
+
+h1{
+  text-align: center;
+  /* border: 2px solid red; */
+
+}
+input,select{
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+ 
+}
+select{
+  width: 99%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+::placeholder,option,select{
+   font-weight: bold;
+}
+label{
+margin-top: 20px;
+font-weight: bold;
+}
+
+h2{
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
+
+
+ 
+  @media screen and (min-width: 200px) and (max-width: 757px){
+
+    form{
+   
+      width: 70%;
+    
+      margin: auto;
+    
+      margin: 20px auto;
+    
+    background-color: white;
+     
+     padding-bottom: 20px;
+     
+         padding: 40px;
+         padding-top: 10px;
+        /* border: 2px solid rgb(142, 142, 225); */
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     
+    }
+
+#button button{
+  
+ margin: 5px;
+}
+select{
+  width: 107%;
+ 
+}
+#link{
+  text-align: center;
+  margin: auto;
+}
+
+  }
+  @media screen and (min-width: 758px) and (max-width: 1024px){
+
+    #form_div{
+      width: 100%;
+      
+    }
+    form{
+   
+      width: 80%;
+    
+      margin: auto;
+    
+      margin: 40px auto;
+    
+    background-color: white;
+     
+     padding-bottom: 20px;
+     
+         padding: 40px;
+         padding-top: 10px;
+        /* border: 2px solid rgb(142, 142, 225); */
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     
+    }
+
+
+
+  }
+
