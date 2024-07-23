@@ -6,6 +6,7 @@
     <title>Document</title>
   </head>
   <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
   <body>
     <div id="Main_container">
@@ -31,7 +32,7 @@
         </div>
         <div class="span_div"><span>&#9776;</span></div>
       </nav>
-      <div id="hero_section">
+      <div data-aos="zoom-in" id="hero_section">
         
           <img
             src="https://shivanistylehouse.co.uk/adminpanel/uploads/category_images/indian-art-crafts.jpg"
@@ -61,7 +62,7 @@
       <div class="our_product" ><h1 style="background-color: rgb(208, 237, 237);">Custumer support</h1></div>
       <div class="contat_us">
 
-        <div id="contat_us_img">
+        <div id="contat_us_img" data-aos="flip-up">
           <img src="https://media.istockphoto.com/id/695858734/photo/is-there-anything-else-i-can-help-with.jpg?s=612x612&w=0&k=20&c=ffz8OmoLt4mr1MX-cXXjbrUoxvSyCUvbwSW3PnrB5YA=" alt="" class="src">
         </div>
 
@@ -217,4 +218,8 @@
       form.reset();
     }
   </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </html>
